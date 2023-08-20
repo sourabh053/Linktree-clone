@@ -14,11 +14,10 @@ html{
     height: 870px;
     background-color: rgba(0, 0, 0,0.90);
 }
-#TopBar{
+.TopBar{
     width: 60%;
     height: 44px;
-    /* display: grid; */
-    display: none;
+    display: grid;
     grid-template-columns: 3fr 1fr 3fr;
     position: fixed;
     left:0;
@@ -29,14 +28,15 @@ html{
     padding: 12px;
     margin: 12px auto;
     background-color: rgba(255,255,255, 0.6);
+    transition: transform 1s;
 }
-#TopBar img{
+.TopBar img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-top: 2px;
 }
-#TopBar button{
+.TopBar button{
     width:40px; 
     height:40px;
     border-radius: 50%;
@@ -45,6 +45,9 @@ html{
     color: white;
     border: none;
     margin-top: 2px;
+}
+.navHide{
+    display: none;
 }
 #dots{
     margin-top: -3px;
@@ -94,9 +97,8 @@ html{
 }
 #links{
     width: 680px;
-    height: 420px;
+    height: 455px;
     margin-top: 32px;
-    /* border: 1px solid whitesmoke; */
 }
 .forhover{
     width: 680px;
@@ -145,4 +147,12 @@ html{
     width: 430px;
     height:55px;
     font-size: 16.5px;
+}
+.logo{
+    width: 680px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
 }

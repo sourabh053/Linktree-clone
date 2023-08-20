@@ -5,8 +5,8 @@ html{
     font-family: 'Inter', sans-serif;
     
     background-image: url("Images/pic.jpg");
-    background-size:cover;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 #_next{
     width:100%;

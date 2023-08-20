@@ -13,6 +13,11 @@
 </head>
 <body>
     <div id="_next" >
+        <div class="whiteBtn">
+            <button>
+                <div style="margin-top: -3px;">...</div>
+            </button>
+        </div>
         <div class="TopBar navHide">
             <div >
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0wzmQPOuBtHFtTb9Ivk-a1kcjgqRV23Dog&usqp=CAU">
@@ -22,7 +27,7 @@
             </div>
             <div>
                 <button>
-                    <div id="dots">...</div>
+                    <div style="margin-top: -3px;">...</div>
                 </button>
             </div>
         </div>
@@ -57,7 +62,7 @@
                                 <img src="Images/linkdin.png" width="40px" height="40px">
                             </div>
                             <div class="desc">
-                                <button class="btn">
+                                <button class="btn" onclick="window.open('https://www.linkedin.com/in/sourabh-thakur-b71a68250/');" >
                                     <p>LinkedIn</p>
                                 </button>
                             </div>
@@ -70,7 +75,7 @@
                                 <img src="Images/twitter.png" width="40px" height="40px">
                             </div>
                             <div class="desc">
-                                <button class="btn">
+                                <button class="btn" onclick="window.open('https://twitter.com/SBagaria2710');">
                                     <p>Twitter</p>
                                 </button>
                             </div>
@@ -83,7 +88,10 @@
                                 <img src="Images/github.png" width="40px" height="40px">
                             </div>
                             <div class="desc">
-                                <p>GitHub</p>
+                                <button class="btn" onclick="window.open('https://github.com/sourabh053');">
+                                    <p>GitHub</p>
+                                </button>
+                                
                             </div>
                             <div class="dot">...</div>
                         </div>
@@ -94,7 +102,7 @@
                                 <img src="Images/codepen.png" width="40px" height="40px">
                             </div>
                             <div class="desc">
-                                <button class="btn">
+                                <button class="btn" onclick="window.open('https://codepen.io/Sourabh-Thakur');">
                                     <p>CodePen</p>
                                 </button>
                             </div>
@@ -107,7 +115,7 @@
                                 <img src="Images/hackerrank.png" width="40px" height="40px">
                             </div>
                             <div class="desc">
-                                <button class="btn">
+                                <button class="btn" onclick="window.open('https://www.hackerrank.com/sourabhthakur48');">
                                     <p>Sourabh Thakur | HackerRank Profile</p>
                                 </button>
                             </div>
@@ -117,12 +125,12 @@
                 </div>
                 <div id="extra">
                     <div class="logo">
-                        <a>
+                        <a href="">
                             <img src="Images/gmail.png" width="30px">
                         </a>
                     </div>
                     <div class="logo">
-                        <a>
+                        <a href="https://linktr.ee/" target="_blank">
                             <img src="Images/linktree.png" width="40px">
                         </a>
                     </div>
@@ -133,13 +141,16 @@
     <script>
         {
             const nav = document.querySelector(".TopBar");
+            const nav1 = document.querySelector(".whiteBtn");
             let prevScrollpos = window.pageYOffset;
             window.onscroll = function() {
                 let currentScrollPos = window.pageYOffset;
                 if (currentScrollPos < 50) {
                     nav.classList.add("navHide");
+                    nav1.classList.remove("navHide");
                 } else     {
                     nav.classList.remove("navHide");
+                    nav1.classList.add("navHide");
                 }
                 prevScrollpos = currentScrollPos;
             }

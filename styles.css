@@ -50,8 +50,26 @@ html{
 .navHide{
     display: none;
 }
+.whiteBtn{
+    position: fixed;
+    top: 24.5px;
+    right:253px;
+}
+button,a{
+    cursor: pointer;
+}
+.whiteBtn button{
+    width:40px; 
+    height:40px;
+    border-radius: 50%;
+    float: right;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-top: 2px;
+}
 #dots{
-    margin-top: -3px;
+    
 }
 #main{
     width: 96.8%;

@@ -6,6 +6,7 @@ html{
     
     background-image: url("Images/pic.jpg");
     background-size:cover;
+    /* background-repeat: no-repeat; */
 }
 #_next{
     width:100%;

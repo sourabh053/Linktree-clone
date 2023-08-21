@@ -29,7 +29,6 @@ html{
     padding: 12px;
     margin: 12px auto;
     background-color: rgba(255,255,255, 0.6);
-    transition: transform 1s;
 }
 .TopBar img{
     width: 40px;
@@ -37,7 +36,7 @@ html{
     border-radius: 50%;
     margin-top: 2px;
 }
-.TopBar button{
+.dots{
     width:40px; 
     height:40px;
     border-radius: 50%;
@@ -48,25 +47,17 @@ html{
     margin-top: 2px;
 }
 .navHide{
-    display: none;
+    visibility: hidden;
 }
-.whiteBtn{
-    position: fixed;
-    top: 24.5px;
-    right:253px;
+.dots{
+    visibility: visible;
 }
 button,a{
     cursor: pointer;
 }
-.whiteBtn button{
-    width:40px; 
-    height:40px;
-    border-radius: 50%;
-    float: right;
+.whiteBtn{
     background-color: white;
     color: rgb(0, 0, 0);
-    border: none;
-    margin-top: 2px;
 }
 #main{
     width: 96.8%;
@@ -152,17 +143,11 @@ button,a{
     margin: 10px 15px;
 }
 .linkbtn:hover{
-    width: 680px;
-    height: 60px;
-    margin: 0;
+    transform: scale(1.03);
+    transition: transform 0.1s ease;
 }
 .linkbtn:hover .dot{
     color: rgb(255, 255, 255);
-}
-.linkbtn:hover .btn{
-    width: 430px;
-    height:55px;
-    font-size: 16.5px;
 }
 .logo{
     width: 680px;

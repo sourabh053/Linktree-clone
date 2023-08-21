@@ -14,11 +14,6 @@
 </head>
 <body>
     <div id="_next" >
-        <div class="whiteBtn">
-            <button>
-                <div style="margin-top: -3px;">...</div>
-            </button>
-        </div>
         <div class="TopBar navHide">
             <div >
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0wzmQPOuBtHFtTb9Ivk-a1kcjgqRV23Dog&usqp=CAU">
@@ -26,9 +21,9 @@
             <div>
                 <p style="font-size: 17px; margin-top: 12px;">@Sourabh53</p>
             </div>
-            <div>
-                <button>
-                    <div style="margin-top: -3px;">...</div>
+            <div >
+                <button class="dots whiteBtn">
+                    <div style="margin-top: -7px;" >...</div>
                 </button>
             </div>
         </div>
@@ -54,7 +49,7 @@
                                     <p>The Positive Shift: Moving Toward a More Fulfilling Life</p>
                                 </button>
                             </div>
-                            <div class="dot">...</div>
+                            <a href="" target="_blank" style="text-decoration: none;"><div class="dot">...</div></a>
                         </div>
                     </div>
                     <div class="forhover">
@@ -67,7 +62,7 @@
                                     <p>LinkedIn</p>
                                 </button>
                             </div>
-                            <div class="dot">...</div>
+                            <a href="" target="_blank" style="text-decoration: none;"><div class="dot">...</div></a>
                         </div>
                     </div>
                     <div class="forhover">
@@ -80,7 +75,7 @@
                                     <p>Twitter</p>
                                 </button>
                             </div>
-                            <div class="dot">...</div>
+                            <a href="" target="_blank" style="text-decoration: none;"><div class="dot">...</div></a>
                         </div>
                     </div>
                     <div class="forhover">
@@ -94,7 +89,7 @@
                                 </button>
                                 
                             </div>
-                            <div class="dot">...</div>
+                            <a href="" target="_blank" style="text-decoration: none;"><div class="dot">...</div></a>
                         </div>
                     </div>
                     <div class="forhover">
@@ -107,7 +102,7 @@
                                     <p>CodePen</p>
                                 </button>
                             </div>
-                            <div class="dot">...</div>
+                            <a href="" target="_blank" style="text-decoration: none;"><div class="dot">...</div></a>
                         </div>
                     </div>
                     <div class="forhover">
@@ -120,7 +115,7 @@
                                     <p>Sourabh Thakur | HackerRank Profile</p>
                                 </button>
                             </div>
-                            <div class="dot">...</div>
+                            <a href="" target="_blank" style="text-decoration: none;"><div class="dot">...</div></a>
                         </div>
                     </div>
                 </div>
@@ -143,14 +138,17 @@
         {
             const nav = document.querySelector(".TopBar");
             const nav1 = document.querySelector(".whiteBtn");
+            const btn = document.querySelector(".dots");
             let prevScrollpos = window.pageYOffset;
             window.onscroll = function() {
                 let currentScrollPos = window.pageYOffset;
                 if (currentScrollPos < 50) {
                     nav.classList.add("navHide");
+                    btn.classList.add("whiteBtn");
                     nav1.classList.remove("navHide");
                 } else     {
                     nav.classList.remove("navHide");
+                    btn.classList.remove("whiteBtn");
                     nav1.classList.add("navHide");
                 }
                 prevScrollpos = currentScrollPos;

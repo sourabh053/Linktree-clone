@@ -160,7 +160,7 @@ button,a{
 
 @media screen and (max-width: 600px){
     html{
-        background-position-x: right;
+        background-position-x: center;
     }
     body *{
         max-width: 100%;

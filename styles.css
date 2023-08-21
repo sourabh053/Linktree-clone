@@ -157,3 +157,70 @@ button,a{
     align-items: flex-end;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 600px){
+    html{
+        background-position-x: right;
+    }
+    body *{
+        max-width: 100%;
+    }
+    body{
+        width: 100%;
+        min-height: 100vh;
+        
+    }
+    #_next{
+        width: 100%;
+        min-width: 100px;
+    }
+    #main{
+        width: 96%;
+        padding: 64px 6px;
+    }
+    .TopBar{
+        width:80%;
+        min-width: 100px;
+        height: 40px;
+        z-index: 10px;
+    }
+    #links{
+        width:100%;
+        height: auto;
+    }
+    .forhover{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .linkbtn{
+        width: 90%;
+        height: auto;
+        box-shadow: 0px 0px 10px 0px #212020;
+    }
+    .icon{
+        min-width: 14%;
+    }
+    .desc{
+        width: 90%;
+        height: auto;
+    }
+    .desc button{
+        width: 100%;
+        height: auto;
+    }
+    .linkbtn a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        width: 70%;
+    }
+    .logo{
+        width:100%;
+    }
+    .dot{
+        color: rgb(255, 255, 255);
+    }
+}

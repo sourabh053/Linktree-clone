@@ -272,6 +272,9 @@ button,a{
         min-height: 100vh;
         
     }
+    #wrapper>div:first-child{
+        height: fit-content;
+    }
     #_next{
         width: 100%;
         min-width: 100px;

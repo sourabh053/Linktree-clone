@@ -32,7 +32,7 @@ html{
 #wrapper>div:first-child{
     border-radius: 16px 16px 0 0;
     width: 95.9%;
-    height: 103%;
+    height: fit-content;
     background-color: white;
     padding: 24px 8px;
 
@@ -271,9 +271,6 @@ button,a{
         width: 100%;
         min-height: 100vh;
         
-    }
-    #wrapper>div:first-child{
-        height: fit-content;
     }
     #_next{
         width: 100%;

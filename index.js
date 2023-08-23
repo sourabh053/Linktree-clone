@@ -23,6 +23,11 @@ const nav = document.querySelector(".TopBar");
             });
             function on(){
                 document.getElementById("overlay").style.display = "block";
+                document.getElementById("change").innerHTML = "Share this Linktree";
+            }
+            function one(){
+                document.getElementById("overlay").style.display = "block";
+                document.getElementById("change").innerHTML = "Share this Link";
             }
             function off(){
                 document.getElementById("overlay").style.display = "none";

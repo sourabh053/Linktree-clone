@@ -13,6 +13,110 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="overlay" >
+        <div id="wrapper">
+            <div>
+                <div style="height: 20px;">
+                    <div style="height:auto; margin: 0; text-align: center;">
+                        <p>Share this Linktree</p>
+                    </div>
+                    <button id="close" onclick="off()">
+                        <img src="Images/close.png" width="13px" height="13px" >
+                    </button>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a>
+                        <div style="display: flex; gap: 20px; padding: 0 10px;">
+                            <img src="Images/snap.png" width="30px" height="25px" style="margin: auto 0;">
+                            <p>Share on Snapchat</p>
+                            <img class="grtr" src="Images/grtr.png" width="25px" height="25px">
+                        </div>
+                    </a>
+                    <a>
+                        <div style="display: flex; gap: 20px; padding: 0 10px;">
+                            <img src="Images/fb.png" width="25px" height="25px" style="margin: auto 0;">
+                            <p>Share on Facebook</p>
+                            <img class="grtr" src="Images/grtr.png" width="25px" height="25px" style="left: 30%;">
+                        </div>
+                    </a>
+                    <a>
+                        <div style="display: flex; gap: 20px; padding: 0 10px;">
+                            <img src="Images/link.png" width="25px" height="25px" style="margin: auto 0;">
+                            <p>Share on LinkedIn</p>
+                            <img class="grtr" src="Images/grtr.png" width="25px" height="25px" style="left: 33%;">
+                        </div>
+                    </a>
+                    <a>
+                        <div style="display: flex; gap: 20px; padding: 0 10px;">
+                            <img src="Images/tweet.png" width="25px" height="25px" style="margin: auto 0;">
+                            <p>Share on Twitter</p>
+                            <img class="grtr" src="Images/grtr.png" width="25px" height="25px" style="left: 36%;">
+                        </div>
+                    </a>
+                    <a>
+                        <div style="display: flex; gap: 20px; padding: 0 10px;">
+                            <img src="Images/whatsapp.png" width="25px" height="25px" style="margin: auto 0;">
+                            <p>Share via WhatsApp</p>
+                            <img class="grtr" src="Images/grtr.png" width="25px" height="25px" style="left: 28%;">
+                        </div>
+                    </a>
+                    <a>
+                        <div style="display: flex; gap: 20px; padding: 0 10px;">
+                            <img src="Images/messanger.png" width="25px" height="25px" style="margin: auto 0;">
+                            <p>Share via Messenger</p>
+                            <img class="grtr" src="Images/grtr.png" width="25px" height="25px" style="left: 26%;">
+                        </div>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#compose" target="_blank" style="text-decoration: none; color: black;">
+                        <div style="display: flex; gap: 20px; padding: 0 10px;">
+                            <img src="Images/email.png" width="25px" height="25px" style="margin: auto 0;">
+                            <p>Share via Email</p>
+                            <img class="grtr" src="Images/grtr.png" width="25px" height="25px" style="left: 39%;">
+                        </div>
+                    </a>
+                    <a>
+                        <div style="display: flex; gap: 20px; padding: 0 10px;">
+                            <img src="Images/moreop.png" width="25px" height="25px" style="margin: auto 0;">
+                            <p>More options</p>
+                            <img class="grtr" src="Images/grtr.png" width="25px" height="25px" style="left: 43%;">
+                        </div>
+                    </a>
+                    <div id="copy">
+                        <div id="texton">
+                            <img src="Images/favicon.png" width="20px" height="25px" style="margin: auto 15px;">
+                            <p style="margin: auto 0;">linktr.ee/SourabhT</p>
+                        </div>
+                        <div id="copybtn">
+                            <p>Copy</p>
+                        </div>
+                    </div>
+                    <a style="width: 104%; display: block; margin-left: -7px;">
+                        <div id="report">
+                            <img src="Images/report.png" width="25px" height="25px" style="margin: auto 0; margin-left: 18px;">
+                            <p>Report this Linktree</p>
+                            <img class="grtr" src="Images/grtr.png" width="25px" height="25px" style="left: 26%;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="end" style="flex-direction: column;">
+                    <h3 style="margin: 25px auto 5px 20px; font-size: 15px;">Create your own Linktree</h3>
+                    <p style="margin: 0 auto 25px 20px; color:rgb(103, 107, 95); font-size: 14px;">The only link in bio trusted by 35M+ people.</p>
+                </div>
+                <div class="end" style="height: auto;">
+                    <button class="endfs" style="background-color: black; border: none; color: white;">
+                        Sign up free
+                    </button>
+                </div>
+                <div class="end" style="height: auto;">
+                    <button class="endfs" style="border: 1px solid rgb(224, 226, 217); margin-top: 10px; background-color: white;">
+                        Find out more
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="_next" >
         <div class="TopBar navHide">
             <div >
@@ -22,7 +126,7 @@
                 <p style="font-size: 17px; margin-top: 12px;">@Sourabh53</p>
             </div>
             <div >
-                <button class="dots whiteBtn">
+                <button class="dots whiteBtn" onclick="on()">
                     <div style="margin-top: -7px;" >...</div>
                 </button>
             </div>
@@ -134,26 +238,6 @@
             </div>
         </div>
     </div>
-    <script>
-        {
-            const nav = document.querySelector(".TopBar");
-            const nav1 = document.querySelector(".whiteBtn");
-            const btn = document.querySelector(".dots");
-            let prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-                let currentScrollPos = window.pageYOffset;
-                if (currentScrollPos < 50) {
-                    nav.classList.add("navHide");
-                    btn.classList.add("whiteBtn");
-                    nav1.classList.remove("navHide");
-                } else     {
-                    nav.classList.remove("navHide");
-                    btn.classList.remove("whiteBtn");
-                    nav1.classList.add("navHide");
-                }
-                prevScrollpos = currentScrollPos;
-            }
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

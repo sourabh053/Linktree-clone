@@ -18,7 +18,7 @@ This is a site inspired by the [Linktree Site](https://linktr.ee/ShashwatB).
 
 ## Overview
 
-this site i have made using HTML/CSS and a little bit of JavaScript. I recently started cloning existing sites to improve my Frondend skills and this site is my first try in cloning a site. i have also done similar challenges on Frontend Mentor site in which you have to copy a design from a photo.  
+this site i have made using HTML/CSS and a little bit of JavaScript. I recently started cloning existing sites to improve my Frondend skills and this site is my first try in cloning a site. i had also done similar challenges on Frontend Mentor site in which you have to copy a design from a photo.  
 
 ### Screenshot
 
@@ -36,7 +36,7 @@ this site i have made using HTML/CSS and a little bit of JavaScript. I recently 
 
 ## My process
 
-Firstly i made a rough blueprint of the site then i figured out where to use what element and which element should be nested into other and which elements should have classes and ids. after making basic html and css for mobile i started on desktop design. After taking care of html and css i started using some JavaScript to make my site interactive like making topbar disappear when on top of the site and making it appear agian when we scroll a little down. I also used JS to make the ellipsis interactive.
+Firstly i made a rough blueprint of the site then i figured out where to use what element and which element should be nested into other and which elements should have classes and ids. After taking care of html and css i started using some JavaScript to make my site interactive like making topbar disappear when on top of the site and making it appear agian when we scroll a little down. I also used JS to make the ellipsis interactive.
 
 ### Built with
 
@@ -70,7 +70,7 @@ I also learned about normalisation of CSS and why it is necessary for compatibil
 
 ### Continued development
 
-Cloning sites is afun and learning experience and i will countinue this and clone more complex sites in future.
+Cloning sites is a fun and learning experience and i will countinue this and clone more complex sites in future.
 
 ### Useful resources
 
